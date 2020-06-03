@@ -38,17 +38,21 @@ function activateInput() {
   inputName.focus();
 }
 function render() {
+  function createDeleteButton() {
+    var button = document.createElement('button');
+    button.classList.add('deleteButton');
+    button.textContent = 'x';
+    return button;
+  }
   var divNames = document.querySelector('#names');
   divNames.innerHTML = '';
   var ul = document.createElement('ul');
   for (var i = 0; i < globalNames.length; i++) {
     var currentName = globalNames[i];
     var li = document.createElement('li');
-    var button = document.createElement('button');
-    button.classList.add('deleteButton');
+    var button = createDeleteButton();
     var span = document.createElement('span');
     span.textContent = currentName;
-    button.textContent = 'x';
     li.appendChild(button);
     li.appendChild(span);
     ul.appendChild(li);
