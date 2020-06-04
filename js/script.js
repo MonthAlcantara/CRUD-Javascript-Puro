@@ -39,6 +39,7 @@ function activateInput() {
     console.log(newName);
     console.log(currentIndice);
     globalNames[currentIndice] = newName;
+    render();
   }
 
   //Função Enter Acionado
