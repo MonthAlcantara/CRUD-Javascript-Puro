@@ -1,4 +1,4 @@
-# Primeiro CRUD utilizando Javascript puro, html e css
+# Projeto de CRUD utilizando Javascript puro, html e css
 
 Seguindo com os estudos, realizei meu primeiro CRUD com Javascript Vanilla, HTML e CSS.
 
